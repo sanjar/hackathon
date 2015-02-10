@@ -3,10 +3,13 @@ package com.mbrdi.helpinghand;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class StartActivity extends Activity {
 
@@ -19,9 +22,30 @@ public class StartActivity extends Activity {
 		webView = (WebView) findViewById(R.id.webView1);
 		WebSettings settings = webView.getSettings();
 		settings.setJavaScriptEnabled(true);
+		//settings.setDisplayZoomControls(true);
+		settings.setBuiltInZoomControls(true);
+		//settings.setUseWideViewPort(true);
+		
 		webView.setVerticalScrollBarEnabled(true);
 		webView.setHorizontalScrollBarEnabled(true);
-		webView.loadUrl("http://10.0.2.2:8080/HelpingHand/");
+		webView.loadUrl("http://10.0.2.2:8080/HelpingHand/home");
+		webView.setWebViewClient(new WebViewClient(){
+			@Override
+			public boolean shouldOverrideUrlLoading(WebView view, String url) {
+				// TODO Auto-generated method stub
+				view.loadUrl(url);
+				Log.d(StartActivity.class.getName(), url);
+				System.out.println(url);
+				return false;
+			}
+			/*@Override
+			public void onPageFinished(WebView view, String url) {
+				// TODO Auto-generated method stub
+			
+				
+			}*/
+		});
+		
 	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -40,5 +64,18 @@ public class StartActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		// TODO Auto-generated method stub
+		if(keyCode==KeyEvent.KEYCODE_BACK && webView.canGoBack()){
+			webView.goBack();
+			return true;
+		}
+		else{
+			finish();
+		}
+		return super.onKeyDown(keyCode, event);
 	}
 }
