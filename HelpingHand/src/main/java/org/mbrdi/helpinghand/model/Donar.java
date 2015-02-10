@@ -15,6 +15,38 @@ public class Donar {
 	@Column(name="donar_id")
 	private Integer donarId;
 	
+	public Integer getDonarId() {
+		return donarId;
+	}
+
+	public void setDonarId(Integer donarId) {
+		this.donarId = donarId;
+	}
+
+	public String getDonarName() {
+		return donarName;
+	}
+
+	public void setDonarName(String donarName) {
+		this.donarName = donarName;
+	}
+
+	public String getBloodGroup() {
+		return bloodGroup;
+	}
+
+	public void setBloodGroup(String bloodGroup) {
+		this.bloodGroup = bloodGroup;
+	}
+
+	public String getDonationDate() {
+		return donationDate;
+	}
+
+	public void setDonationDate(String donationDate) {
+		this.donationDate = donationDate;
+	}
+
 	@Column(name="donar_name")
 	private String donarName;
 	

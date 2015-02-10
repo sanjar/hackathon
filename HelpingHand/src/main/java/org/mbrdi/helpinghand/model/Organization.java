@@ -21,6 +21,70 @@ public class Organization {
 	@Column(name="description")
 	private String description;
 	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getAbout() {
+		return about;
+	}
+
+	public void setAbout(String about) {
+		this.about = about;
+	}
+
+	public String getContactPerson() {
+		return contactPerson;
+	}
+
+	public void setContactPerson(String contactPerson) {
+		this.contactPerson = contactPerson;
+	}
+
+	public String getHeadOfficeAddress() {
+		return headOfficeAddress;
+	}
+
+	public void setHeadOfficeAddress(String headOfficeAddress) {
+		this.headOfficeAddress = headOfficeAddress;
+	}
+
+	public String getContactNumber() {
+		return contactNumber;
+	}
+
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
+	public OrganizationType getType() {
+		return type;
+	}
+
+	public void setType(OrganizationType type) {
+		this.type = type;
+	}
+
 	@Column(name="about")
 	private String about;
 	

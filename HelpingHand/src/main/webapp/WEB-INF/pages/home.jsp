@@ -20,13 +20,12 @@
 <script type="text/javascript" src="<c:url value='/resources/js/wow.min.js'/>" ></script>
    </head>
     <body data-spy="scroll">
-       
-    <div id="">           
-  <header> 
+                 
+  <header style="padding-bottom: 50px;padding-top: 60px"> 
   
-        <span class="brandname" id="m_ex"><span style="color:#fff">M</span>BRDI <span style="color:#fff; margin-left:20px;">C</span>ORPORATE<span style="color:#fff; margin-left:20px;"> S</span>OCIAL <span style="color:#fff;margin-left:20px;">R</span>ESPONSIBILITY</span>
-        <span class="brandname" id="m_ex1"> Helping Hand</span>
-        <span class="brandname"><img src="<c:url value='/resources/images/ha.png' />"/></span>
+        <span class="brandname" id="m_ex" style="font-size: 30px"><span style="color:#fff">M</span>BRDI <span style="color:#fff; margin-left:20px;">C</span>ORPORATE<span style="color:#fff; margin-left:20px;"> S</span>OCIAL <span style="color:#fff;margin-left:20px;">R</span>ESPONSIBILITY</span>
+        <span class="brandname" id="m_ex1"></span>
+        <span class="brandname"><img src="<c:url value='/resources/images/helping_hand_logo.png' />"/></span>
        
       
      </header>   
@@ -34,47 +33,17 @@
  
     <div id="services" class="container">
 <div class="row">
-               <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                 <div class="example-one">
-                  <b>Wish Tree</b>
+<c:forEach var="event" items="${eventList}" varStatus="count">
+              <a href="donation?type=${event.eventType}" style="text-decoration:none"> <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                 <div class="example-one${count.index+1}">
+                  <b>${event.eventName}</b>
                  </div>
                   
-       </div> <!-- ITEM END -->
+       </div></a> <!-- ITEM END -->
+       
+   </c:forEach>
 
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                   <div class="example-one2">
-                  <b>Wish Tree</b>
-                   </div>
-                  
-                </div> <!-- ITEM END -->
-
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                   <div class="example-one3">
-                  <b>Wish Tree</b>
-                   </div>
-                   
-                </div> <!-- ITEM END -->
-
-               <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                   <div class="example-one4">
-                  <b>Wish Tree</b>
-                   </div>
-                  
-          </div> <!-- ITEM END -->
-
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                   <div class="example-one5">
-                  <b>Wish Tree</b>
-                   </div>
-                   
-                </div> <!-- ITEM END -->
-
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                   <div class="example-one6">
-                  <b>Wish Tree</b>
-                   </div>
-                   
-                </div> 
+               
       </div>
     </div>
     

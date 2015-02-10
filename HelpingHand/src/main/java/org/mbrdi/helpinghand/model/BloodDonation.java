@@ -17,6 +17,38 @@ public class BloodDonation {
 	@Column(name="id")
 	private Integer id;
 	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Donar getDonar() {
+		return donar;
+	}
+
+	public void setDonar(Donar donar) {
+		this.donar = donar;
+	}
+
+	public String getDonationDate() {
+		return donationDate;
+	}
+
+	public void setDonationDate(String donationDate) {
+		this.donationDate = donationDate;
+	}
+
+	public String getDonationAddress() {
+		return donationAddress;
+	}
+
+	public void setDonationAddress(String donationAddress) {
+		this.donationAddress = donationAddress;
+	}
+
 	@ManyToOne
 	@JoinColumn(name="donar_id")
 	private Donar donar;

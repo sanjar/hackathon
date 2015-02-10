@@ -301,7 +301,7 @@ footer p, footer .bigicon {color: #7e7e7e;}
 .merc{width:100%;
 height:100px; line-height:100px; background-color:#06F;}
 
-.example-one {
+.example-one1 {
   border-radius: 10px;
   background: #00b050;
   margin:0 auto;
@@ -364,6 +364,65 @@ height:100px; line-height:100px; background-color:#06F;}
   height:100px; width:200px; line-height:100px;
   margin-top:20px;color:#FFF;
   font-size:16px;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.example-one7 {
+  border-radius: 10px;
+  background: #00b050;
+  margin:0 auto;
+  height:50%; width:76%; line-height:100px;
+  margin-top:20px;color:#FFF;
+  font-size:16px;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.example-one8 {
+  border-radius: 10px;
+  background: #3CB371;
+  margin:0 auto;
+  height:100px; width:300px; line-height:100px;
+  margin-top:20px;color:#FFF;
+  font-size:16px;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+.example-one9 {
+  border-radius: 10px;
+  background: #191970;
+  margin:0 auto;
+  height:100px; width:300px; line-height:100px;
+  margin-top:20px;color:#FFF;
+  font-size:16px;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.example-one10 {
+  border-radius: 10px;
+  background: #3CB371;
+  margin:0 auto;
+  height:50px; width:100px; line-height:100px;
+  margin-top:20px;color:#FFF;
+  font-size:16px;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.example-one11 {
+  border-radius: 10px;
+  background: #3CB371;
+  margin:0 auto;
+  height:150px; width:700px; line-height:100px;
+  margin-top:20px;color:#FFF;
+  font-size:24px;
   -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);

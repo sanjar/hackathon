@@ -24,6 +24,62 @@ public class Receipt {
 	@Column(name="receipt_provided_to")
 	private String receiptProvidedTo;
 	
+	public Integer getReceiptId() {
+		return receiptId;
+	}
+
+	public void setReceiptId(Integer receiptId) {
+		this.receiptId = receiptId;
+	}
+
+	public String getReceiptDate() {
+		return receiptDate;
+	}
+
+	public void setReceiptDate(String receiptDate) {
+		this.receiptDate = receiptDate;
+	}
+
+	public String getReceiptProvidedBy() {
+		return receiptProvidedBy;
+	}
+
+	public void setReceiptProvidedBy(String receiptProvidedBy) {
+		this.receiptProvidedBy = receiptProvidedBy;
+	}
+
+	public String getReceiptProvidedTo() {
+		return receiptProvidedTo;
+	}
+
+	public void setReceiptProvidedTo(String receiptProvidedTo) {
+		this.receiptProvidedTo = receiptProvidedTo;
+	}
+
+	public String getReceiptAmount() {
+		return receiptAmount;
+	}
+
+	public void setReceiptAmount(String receiptAmount) {
+		this.receiptAmount = receiptAmount;
+	}
+
+	public String getReceiptFor() {
+		return receiptFor;
+	}
+
+	public void setReceiptFor(String receiptFor) {
+		this.receiptFor = receiptFor;
+	}
+
+	public String getReceiptSignedBy() {
+		return receiptSignedBy;
+	}
+
+	public void setReceiptSignedBy(String receiptSignedBy) {
+		this.receiptSignedBy = receiptSignedBy;
+	}
+
 	@Column(name="receipt_amount")
 	private String receiptAmount;
 	

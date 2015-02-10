@@ -15,6 +15,70 @@ public class BloodDonationDemand {
 	@Column(name="id")
 	private Integer id;
 	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getBloodGroupRequested() {
+		return bloodGroupRequested;
+	}
+
+	public void setBloodGroupRequested(String bloodGroupRequested) {
+		this.bloodGroupRequested = bloodGroupRequested;
+	}
+
+	public String getRequetorName() {
+		return requetorName;
+	}
+
+	public void setRequetorName(String requetorName) {
+		this.requetorName = requetorName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getContactNumber() {
+		return contactNumber;
+	}
+
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
+	public String getContactName() {
+		return contactName;
+	}
+
+	public void setContactName(String contactName) {
+		this.contactName = contactName;
+	}
+
+	public String getReasonForRequest() {
+		return reasonForRequest;
+	}
+
+	public void setReasonForRequest(String reasonForRequest) {
+		this.reasonForRequest = reasonForRequest;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
 	@Column(name="blood_group_requested")
 	private String bloodGroupRequested;
 	
