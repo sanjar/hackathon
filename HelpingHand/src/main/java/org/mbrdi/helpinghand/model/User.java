@@ -10,8 +10,15 @@ import javax.persistence.Table;
 public class User {
 
 	@Id
-	@Column(name="user_id")
-	private String userId;
+	@Column(name="emp_no")
+	private String empNumber;
+	
+	@Column(name="user_contact_number")
+	private String contactNumber;
+	
+	@Column(name="user_department")
+	private String department;
+	
 	
 	@Column(name="user_name")
 	private String userName;
@@ -22,13 +29,6 @@ public class User {
 	@Column(name="user_email")
 	private String userEmail;
 	
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
 
 	public String getUserName() {
 		return userName;
@@ -54,26 +54,31 @@ public class User {
 		this.userEmail = userEmail;
 	}
 
-	public String getUserDepartment() {
-		return userDepartment;
-	}
 
-	public void setUserDepartment(String userDepartment) {
-		this.userDepartment = userDepartment;
-	}
-
-	public String getUserContactNumber() {
-		return userContactNumber;
-	}
-
-	public void setUserContactNumber(String userContactNumber) {
-		this.userContactNumber = userContactNumber;
-	}
-
-	@Column(name="user_department")
-	private String userDepartment;
 	
-	@Column(name="user_contact_number")
-	private String userContactNumber;
+
+	public String getContactNumber() {
+		return contactNumber;
+	}
+
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public String getEmpNumber() {
+		return empNumber;
+	}
+
+	public void setEmpNumber(String empNumber) {
+		this.empNumber = empNumber;
+	}
 	
 }

@@ -39,13 +39,7 @@ public class BloodDonationDemand {
 		this.requetorName = requetorName;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
+	
 
 	public String getContactNumber() {
 		return contactNumber;
@@ -85,8 +79,8 @@ public class BloodDonationDemand {
 	@Column(name="requestor_name")
 	private String requetorName;
 	
-	@Column(name="email")
-	private String email;
+	@Column(name="user_name")
+	private String userName;
 	
 	@Column(name="contact_number")
 	private String contactNumber;
@@ -99,4 +93,12 @@ public class BloodDonationDemand {
 	
 	@Column(name="comment")
 	private String comment;
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 }

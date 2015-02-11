@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
 <title>mbrdi</title>
-<link rel="StyleSheet" href="<c:url value='/resources/css/bootstrap.min.css' />" type="text/css" />
+
+    <link rel="StyleSheet" href="<c:url value='/resources/css/bootstrap.min.css' />" type="text/css" />
 <link rel="StyleSheet" href="<c:url value='/resources/css/style.css' />" type="text/css" />
 <link rel="StyleSheet" href="<c:url value='/resources/css/responsive.css' />" type="text/css" />
 <script type="text/javascript" src="<c:url value='/resources/js/drifolio.js'/>" ></script>
@@ -19,6 +20,7 @@
    </head>
     <body data-spy="scroll">
        
+    <div id="">           
   <header style="padding-bottom: 50px;padding-top: 60px"> 
   
         <span class="brandname" id="m_ex" style="font-size: 30px"><span style="color:#fff">M</span>BRDI <span style="color:#fff; margin-left:20px;">C</span>ORPORATE<span style="color:#fff; margin-left:20px;"> S</span>OCIAL <span style="color:#fff;margin-left:20px;">R</span>ESPONSIBILITY</span>
@@ -27,27 +29,33 @@
        
       
      </header>   
-<div class="" data-wow-duration="3s">
-                   <div class="example-one" style="text-align:center;font-size: 60px"><b> Fullfil a Wish</b></div>
+<div style="padding-top:40px" class="" data-wow-duration="">
+                   <div class="example-one12" style="text-align:center"><b>Pledge a donation
+to PM relief fund
+</b></div>
                    
     </div> <!-- ITEM END -->
  
-    <div id="services" class="container" style="padding-bottom: 50px;padding-top: 60px">
-	<div class="row">
-	<c:forEach var="wishDonation" items="${wishTypeDonationList}" varStatus="count">
-               <a href="submit?type=WISH&amount=${wishDonation.amount}&name=${wishDonation.name}" style="text-decoration:none"><div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                  <div class="example-one${count.index+1}" style="line-height:30px;padding-top: 20px">
-                  
-                  <b>INR ${wishDonation.amount}</b><br/>
-                  <b>${wishDonation.name}</b>
-                  
+    <div id="services" class="container">
+<div class="row">
+     <c:forEach var="pledgingDonation" items="${pledgingTypeDonationList}" varStatus="count">
+               <a href="submit?type=PLEDGING_DONATION&amount=${pledgingDonation.amount}&name=${pledgingDonation.name}" style="text-decoration:none"><div style="padding-top:100px" class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="">
+                 <div class="example-one${count.index+1}" style="line-height:30px;padding-top: 20px">
+                  <b>INR ${pledgingDonation.amount}</b><br/>
+                  <b>${pledgingDonation.name}</b>
                  </div>
-                  
-       </div></a>
-</c:forEach><!-- ITEM END -->
+                  </a>
+       </div> </c:forEach><!-- ITEM END -->
+
+                
 
                
       </div>
+<form name="customAmount" method="POST" action="customSubmit">
+  <label style="padding-right:40px" for="CustomAmount"><b>Custom Amount</b></label>
+  <input style="padding-right:120px" type="text" name="customAmount" id="customAmount">
+  <input  type="submit" name="submit" id="submit" value="Submit">
+</form>
     </div>
     
    

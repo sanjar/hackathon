@@ -368,8 +368,18 @@ height:100px; line-height:100px; background-color:#06F;}
   -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
 }
-
 .example-one7 {
+  border-radius: 10px;
+  background: #00b050;
+  margin:0 auto;
+  height:100px; width:200px; line-height:100px;
+  margin-top:20px;color:#FFF;
+  font-size:16px;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+.example-one {
   border-radius: 10px;
   background: #00b050;
   margin:0 auto;
@@ -426,6 +436,47 @@ height:100px; line-height:100px; background-color:#06F;}
   -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.example-one12 {
+  border-radius: 10px;
+  background: #800080;
+  margin:0 auto;
+  height:50%; width:70%; line-height:100px;
+  margin-top:20px;color:#FFF;
+  font-size:16px;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+.example-one13 {
+  border-radius: 10px;
+  background: #8B0000;
+  margin:0 auto;
+  height:50%; width:220%; line-height:100px;
+  margin-top:20px;color:#FFF;
+  font-size:16px;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.example-one14 {
+  border-radius: 10px;
+  background: #191970;
+  margin:0 auto;
+  height:40px; width:180px; line-height:100px;
+  margin-top:20px;color:#FFF;
+  font-size:16px;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+.example-one15 {
+  margin:0 auto;
+  height:10%; width:220%; line-height:30px;
+  margin-top:20px;color:#000000;
+  font-size:12px;
 }
 #m_ex{font-family:Verdana, Geneva, sans-serif; font-size:18px; margin-left:200px;}
 #m_ex1{font-family:Verdana, Geneva, sans-serif; font-size:15px; margin-left:20px; color:#fff; font-weight:bold;}

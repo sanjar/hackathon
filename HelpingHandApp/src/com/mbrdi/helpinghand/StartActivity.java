@@ -10,11 +10,12 @@ import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.webkit.WebSettings.PluginState;
 
 public class StartActivity extends Activity {
 
 	WebView webView ;
-	@SuppressLint("SetJavaScriptEnabled")
+	@SuppressLint({ "SetJavaScriptEnabled", "NewApi" })
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,17 +23,22 @@ public class StartActivity extends Activity {
 		webView = (WebView) findViewById(R.id.webView1);
 		WebSettings settings = webView.getSettings();
 		settings.setJavaScriptEnabled(true);
+		settings.setPluginState(PluginState.ON);
 		//settings.setDisplayZoomControls(true);
 		settings.setBuiltInZoomControls(true);
 		//settings.setUseWideViewPort(true);
 		
 		webView.setVerticalScrollBarEnabled(true);
 		webView.setHorizontalScrollBarEnabled(true);
+		webView.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
 		webView.loadUrl("http://10.0.2.2:8080/HelpingHand/home");
 		webView.setWebViewClient(new WebViewClient(){
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
 				// TODO Auto-generated method stub
+				if(url.contains("generateReceipt")){
+					url = "https://docs.google.com/gview?embedded=true&url="+url;
+				}
 				view.loadUrl(url);
 				Log.d(StartActivity.class.getName(), url);
 				System.out.println(url);

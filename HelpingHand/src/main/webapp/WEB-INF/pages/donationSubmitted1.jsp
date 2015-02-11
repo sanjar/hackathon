@@ -57,7 +57,7 @@
  </div>
  
   <div style="padding-left:390px" class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                    <a href="donation/generateReceipt" style="text-decoration:none"><div class="example-one9" style="text-align:center"><b>Download A Receipt</b></div></a>
+                    <a href="submit?type=WISH&amount=${wishDonation.amount}&name=${wishDonation.name}" style="text-decoration:none"><div class="example-one9" style="text-align:center"><b>Download A Receipt</b></div></a>
                    
                    
     </div> <!-- ITEM END --></div>
