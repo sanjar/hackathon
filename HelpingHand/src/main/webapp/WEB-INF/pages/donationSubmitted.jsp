@@ -30,17 +30,17 @@
                  
   <header style="padding-bottom: 50px;padding-top: 60px"> 
   
-        <span class="brandname" id="m_ex" style="font-size: 30px"><span style="color:#fff">M</span>BRDI <span style="color:#fff; margin-left:20px;">C</span>ORPORATE<span style="color:#fff; margin-left:20px;"> S</span>OCIAL <span style="color:#fff;margin-left:20px;">R</span>ESPONSIBILITY</span>
+        <div style="text-align:center"><span class="brandname" id="m_ex" style="font-size: 30px"><span style="color:#fff">M</span>BRDI <span style="color:#fff; margin-left:20px;">C</span>ORPORATE<span style="color:#fff; margin-left:20px;"> S</span>OCIAL <span style="color:#fff;margin-left:20px;">R</span>ESPONSIBILITY</span>
         <span class="brandname" id="m_ex1"></span>
-        <span class="brandname" style="float: inherit;"><img src="<c:url value='/resources/images/helping_hand_logo.png' />"/></span>
+        <span class="brandname" style="float: inherit;"><img src="<c:url value='/resources/images/helping_hand_logo.png' />"/></span></div>
        
       
      </header>
      
      <div id="services" class="container">
       
-<div style="padding-left:100px;padding-top:50px" class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                   <div style="padding-top:20px" class="example-one11" style="text-align:center"><strong> Thanks for your support</strong></div>
+<div style="padding-top:50px" class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
+                   <div class="example-one11" style="text-align:center"><strong> Thanks for your support</strong></div>
                    
                    
                    

@@ -25,13 +25,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.mail.Message;
+/*import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMessage;*/
 
 @Controller
 public class HomeController {
@@ -77,12 +77,12 @@ public class HomeController {
 		//sendExamResultViaMail("",needBlood);
 		return view;
 	}
-	private void sendExamResultViaMail(String emailId, BloodDonationDemand needBlood) {
+	/*private void sendExamResultViaMail(String emailId, BloodDonationDemand needBlood) {
 		String result=getHTMLResultContent(needBlood);
 		sendMail(needBlood.getBloodGroupRequested(),result);
-	}
+	}*/
 
-	private void sendMail(String bloodGroup, String result) {
+	/*private void sendMail(String bloodGroup, String result) {
 		final String username = "nasraysinfo@gmail.com";
 		final String password = "test123test";
  
@@ -104,9 +104,9 @@ public class HomeController {
 					Message message = new MimeMessage(session);
 					message.setFrom(new InternetAddress("demo@gmail.com"));
 					List<InternetAddress> addresses = new ArrayList<InternetAddress>();
-					/*for(String email : emails){
+					for(String email : emails){
 						addresses.add((InternetAddress.parse(email)));
-					}*/
+					}
 					message.setRecipients(Message.RecipientType.BCC,
 						InternetAddress.parse(emails.toString()));
 					message.setSubject("Demand For Blood Group: "+bloodGroup);
@@ -154,7 +154,7 @@ public class HomeController {
 		  "</body>\n"+
 		"</html>\n";
 		return htmlContent;
-	}
+	}*/
 	
 	
 	

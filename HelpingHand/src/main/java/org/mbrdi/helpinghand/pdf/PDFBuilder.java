@@ -69,7 +69,7 @@ public class PDFBuilder extends AbstractITextPdfView {
         table.addCell(cell);
         
         table.addCell("Amount");//constant
-        cell = new PdfPCell(new Phrase(pdfReciept.getDonationAmount()));
+        cell = new PdfPCell(new Phrase(String.valueOf(pdfReciept.getDonationAmount())));
         cell.setColspan(2);
         table.addCell(cell);
         

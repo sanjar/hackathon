@@ -28,13 +28,13 @@
 <!-- <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
    <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script> -->
   </head>
-    <body data-spy="scroll">
+    <body data-spy="scroll" style="height: 50%;width:120%">
                  
   <header style="padding-bottom: 50px;padding-top: 60px"> 
   
-        <span class="brandname" id="m_ex" style="font-size: 30px"><span style="color:#fff">M</span>BRDI <span style="color:#fff; margin-left:20px;">C</span>ORPORATE<span style="color:#fff; margin-left:20px;"> S</span>OCIAL <span style="color:#fff;margin-left:20px;">R</span>ESPONSIBILITY</span>
+        <div style="text-align:center"><span class="brandname" id="m_ex" style="font-size: 30px"><span style="color:#fff">M</span>BRDI <span style="color:#fff; margin-left:20px;">C</span>ORPORATE<span style="color:#fff; margin-left:20px;"> S</span>OCIAL <span style="color:#fff;margin-left:20px;">R</span>ESPONSIBILITY</span>
         <span class="brandname" id="m_ex1"></span>
-        <span class="brandname" style="float: inherit;"><img src="<c:url value='/resources/images/helping_hand_logo.png' />"/></span>
+        <span class="brandname" style="float: inherit;"><img src="<c:url value='/resources/images/helping_hand_logo.png' />"/></span></div>
        
       
      </header>
